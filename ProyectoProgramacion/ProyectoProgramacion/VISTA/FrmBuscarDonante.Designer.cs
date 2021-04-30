@@ -41,6 +41,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnEliminarBDonante = new System.Windows.Forms.Button();
             this.btnSalirBDonante = new System.Windows.Forms.Button();
             this.btnBuscarDonante = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBuscarDonante)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,11 +146,21 @@ namespace ProyectoProgramacion.VISTA
             this.btnBuscarDonante.Text = "BUSCAR";
             this.btnBuscarDonante.UseVisualStyleBackColor = true;
             // 
+            // txtId
+            // 
+            this.txtId.Enabled = false;
+            this.txtId.Location = new System.Drawing.Point(161, 92);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(62, 20);
+            this.txtId.TabIndex = 6;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            // 
             // FrmBuscarDonante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 399);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnBuscarDonante);
             this.Controls.Add(this.btnSalirBDonante);
             this.Controls.Add(this.btnEliminarBDonante);
@@ -159,6 +170,7 @@ namespace ProyectoProgramacion.VISTA
             this.Name = "FrmBuscarDonante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar Donante";
+            this.Load += new System.EventHandler(this.FrmBuscarDonante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgBuscarDonante)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -179,5 +191,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button btnBuscarDonante;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

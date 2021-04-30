@@ -1,4 +1,5 @@
-﻿using ProyectoProgramacion.MODEL;
+﻿using ProyectoProgramacion.DAO;
+using ProyectoProgramacion.MODEL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace ProyectoProgramacion.VISTA
 {
     public partial class FrmBuscarDonante : Form
     {
+        public string Id { get; private set; }
+
         public FrmBuscarDonante()
         {
             InitializeComponent();
@@ -30,7 +33,10 @@ namespace ProyectoProgramacion.VISTA
         }
         void Carga()
         {
-           
+
+        }
+        void Clear()
+        {
 
         }
         private void btnSalirBDonante_Click(object sender, EventArgs e)
@@ -42,24 +48,20 @@ namespace ProyectoProgramacion.VISTA
 
         private void btnEliminarBDonante_Click(object sender, EventArgs e)
         {
-            
             try
             {
-                using (DATOSPROYECTOEntities db = new DATOSPROYECTOEntities())
-                {
-                    //Tbl_UserList1 userList = new Tbl_UserList1();
-                    //int Eliminar = Convert.ToInt32(txtId.Text);
-                    //Tbl_UserList1 userList = db.Tbl_UserList1.Where(x => x.Id == 24).Select(x => x).FirstOrDefault();
-                    ////int Eliminar = Convert.ToInt32(txtid.Text);
-                    ////userList = db.Tbl_UserList1.Find(Eliminar);
-                    //db.Tbl_UserList1.Remove(userList);
-                    //db.SaveChanges();
-                }
-            }
-            catch (Exception EX)
+                Cls1 user = new Cls1();
+                user.deleteUser(Convert.ToInt32(Id));
+                Carga();
+                Clear();
+            }catch (Exception ex)
             {
-                MessageBox.Show(EX.ToString());
+                MessageBox.Show(ex.ToString());
             }
+            //Cls1 user = new Cls1();
+            //user.deleteUser(Convert.ToInt32(Id));
+            //Carga();
+            //Clear();
         }
 
         private void dtgBuscarDonante_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -70,6 +72,21 @@ namespace ProyectoProgramacion.VISTA
             String Telefono = dtgBuscarDonante.CurrentRow.Cells[3].Value.ToString();
             String Edad = dtgBuscarDonante.CurrentRow.Cells[4].Value.ToString();
             String GrupoSanguineo = dtgBuscarDonante.CurrentRow.Cells[5].Value.ToString();
+
+
+            txtId.Text = Id;
+
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+          
+            
+            txtId.Text = Id;
+        }
+
+        private void FrmBuscarDonante_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -32,14 +32,14 @@ namespace ProyectoProgramacion.VISTA
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dtgAgendarCita = new System.Windows.Forms.DataGridView();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnAgendarCita = new System.Windows.Forms.Button();
-            this.btnSalirAgendarCita2 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnAgendarCita = new System.Windows.Forms.Button();
+            this.btnSalirAgendarCita2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgendarCita)).BeginInit();
             this.SuspendLayout();
@@ -77,38 +77,6 @@ namespace ProyectoProgramacion.VISTA
             this.dtgAgendarCita.TabIndex = 2;
             this.dtgAgendarCita.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAgendarCita_CellContentClick);
             // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(597, 24);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
-            this.lblUsuario.TabIndex = 3;
-            this.lblUsuario.Text = "Usuario:";
-            // 
-            // btnAgendarCita
-            // 
-            this.btnAgendarCita.FlatAppearance.BorderSize = 2;
-            this.btnAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgendarCita.Location = new System.Drawing.Point(368, 257);
-            this.btnAgendarCita.Name = "btnAgendarCita";
-            this.btnAgendarCita.Size = new System.Drawing.Size(130, 47);
-            this.btnAgendarCita.TabIndex = 4;
-            this.btnAgendarCita.Text = "Agendar Cita";
-            this.btnAgendarCita.UseVisualStyleBackColor = true;
-            // 
-            // btnSalirAgendarCita2
-            // 
-            this.btnSalirAgendarCita2.FlatAppearance.BorderSize = 2;
-            this.btnSalirAgendarCita2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirAgendarCita2.Location = new System.Drawing.Point(558, 257);
-            this.btnSalirAgendarCita2.Name = "btnSalirAgendarCita2";
-            this.btnSalirAgendarCita2.Size = new System.Drawing.Size(130, 47);
-            this.btnSalirAgendarCita2.TabIndex = 5;
-            this.btnSalirAgendarCita2.Text = "SALIR";
-            this.btnSalirAgendarCita2.UseVisualStyleBackColor = true;
-            this.btnSalirAgendarCita2.Click += new System.EventHandler(this.btnSalirAgendarCita2_Click);
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Id";
@@ -133,6 +101,39 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.Column5.HeaderText = "Fecha de Donacion";
             this.Column5.Name = "Column5";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(597, 24);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
+            this.lblUsuario.TabIndex = 3;
+            this.lblUsuario.Text = "Usuario:";
+            // 
+            // btnAgendarCita
+            // 
+            this.btnAgendarCita.FlatAppearance.BorderSize = 2;
+            this.btnAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgendarCita.Location = new System.Drawing.Point(368, 257);
+            this.btnAgendarCita.Name = "btnAgendarCita";
+            this.btnAgendarCita.Size = new System.Drawing.Size(130, 47);
+            this.btnAgendarCita.TabIndex = 4;
+            this.btnAgendarCita.Text = "Agendar Cita";
+            this.btnAgendarCita.UseVisualStyleBackColor = true;
+            this.btnAgendarCita.Click += new System.EventHandler(this.btnAgendarCita_Click);
+            // 
+            // btnSalirAgendarCita2
+            // 
+            this.btnSalirAgendarCita2.FlatAppearance.BorderSize = 2;
+            this.btnSalirAgendarCita2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirAgendarCita2.Location = new System.Drawing.Point(558, 257);
+            this.btnSalirAgendarCita2.Name = "btnSalirAgendarCita2";
+            this.btnSalirAgendarCita2.Size = new System.Drawing.Size(130, 47);
+            this.btnSalirAgendarCita2.TabIndex = 5;
+            this.btnSalirAgendarCita2.Text = "SALIR";
+            this.btnSalirAgendarCita2.UseVisualStyleBackColor = true;
+            this.btnSalirAgendarCita2.Click += new System.EventHandler(this.btnSalirAgendarCita2_Click);
             // 
             // FrmAgendarCitas2
             // 

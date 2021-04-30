@@ -47,5 +47,10 @@ namespace ProyectoProgramacion.VISTA
             //String Edad = dtgAgendarCita.CurrentRow.Cells[4].Value.ToString();
             //String GrupoSanguineo = dtgAgendarCita.CurrentRow.Cells[5].Value.ToString();
         }
+
+        private void btnAgendarCita_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
