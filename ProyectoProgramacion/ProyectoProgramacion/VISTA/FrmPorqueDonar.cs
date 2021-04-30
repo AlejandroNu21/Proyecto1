@@ -23,5 +23,10 @@ namespace ProyectoProgramacion.VISTA
             FrmMenu frm = new FrmMenu();
             frm.Show();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

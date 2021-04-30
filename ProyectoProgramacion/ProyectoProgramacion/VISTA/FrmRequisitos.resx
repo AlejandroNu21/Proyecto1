@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Requisitos para realizar una donacion:
+
+A pesar que es un acto completamente  altruista, la donacion de sangre es un acto que no todas las personas pueden realizar. En primer lugar hay que cumplir con una serie de requisitos:
+
+1- Estar sano.
+2- Tener entre 18 y 65 años de edad.
+3- Pesar mas de 50 kilos.</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>No obstante hay otras condiciones que debes cumplir:
+
+1- Tener una tension arterial normal.
+2- No haber sufrido de  determinadas enfermedades infecciosas: Hepatitis, VIH, Palidismo, etc.
+3- No haber tenido cancer.
+4- No estar tomando determinados medicamentos.
+5- No consumir drogas.
+6- Seguir habitos de vida minimamente saludables.
+7- No haberse realizado tatuajes o colocado un piercing en los 4 meses previos.
+8- No haber sido sometidos a intervenciones quirurjicas o endoscopias en este mismo periodo de tiempo.
+9- Haber sufrido algun tipo de infeccion en las dos semanas anteriores.
+10- Estar ingiriendo antibioticos u otros medicamentos.
+11- No haber recibido una transfusion de sangre.
+12- No haber sido sometido a un trasplante.</value>
+  </data>
 </root>

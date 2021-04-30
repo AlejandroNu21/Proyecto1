@@ -45,7 +45,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             // btnSalirMenu
             // 
-            this.btnSalirMenu.BackColor = System.Drawing.Color.Coral;
+            this.btnSalirMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSalirMenu.FlatAppearance.BorderSize = 2;
             this.btnSalirMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnSalirMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -126,30 +126,32 @@ namespace ProyectoProgramacion.VISTA
             this.iNFORMACIONToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(109, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(126, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // iNFORMACIONToolStripMenuItem
             // 
+            this.iNFORMACIONToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.iNFORMACIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.requisitosParaDonacionesToolStripMenuItem,
             this.porqueDonarToolStripMenuItem});
+            this.iNFORMACIONToolStripMenuItem.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iNFORMACIONToolStripMenuItem.Name = "iNFORMACIONToolStripMenuItem";
-            this.iNFORMACIONToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.iNFORMACIONToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
             this.iNFORMACIONToolStripMenuItem.Text = "INFORMACION";
             // 
             // requisitosParaDonacionesToolStripMenuItem
             // 
             this.requisitosParaDonacionesToolStripMenuItem.Name = "requisitosParaDonacionesToolStripMenuItem";
-            this.requisitosParaDonacionesToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.requisitosParaDonacionesToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.requisitosParaDonacionesToolStripMenuItem.Text = "Requisitos Para Donaciones";
             this.requisitosParaDonacionesToolStripMenuItem.Click += new System.EventHandler(this.requisitosParaDonacionesToolStripMenuItem_Click);
             // 
             // porqueDonarToolStripMenuItem
             // 
             this.porqueDonarToolStripMenuItem.Name = "porqueDonarToolStripMenuItem";
-            this.porqueDonarToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.porqueDonarToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.porqueDonarToolStripMenuItem.Text = "Porque Donar?";
             this.porqueDonarToolStripMenuItem.Click += new System.EventHandler(this.porqueDonarToolStripMenuItem_Click);
             // 
@@ -167,7 +169,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(445, 462);
             this.Controls.Add(this.btnCompatibilidadSanguinea);
             this.Controls.Add(this.btnBuscarDonante);
