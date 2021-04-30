@@ -38,39 +38,46 @@ namespace ProyectoProgramacion.VISTA
             // 
             // btnIngresarBienvenida
             // 
+            this.btnIngresarBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnIngresarBienvenida.FlatAppearance.BorderSize = 2;
             this.btnIngresarBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresarBienvenida.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresarBienvenida.Location = new System.Drawing.Point(124, 255);
             this.btnIngresarBienvenida.Name = "btnIngresarBienvenida";
             this.btnIngresarBienvenida.Size = new System.Drawing.Size(119, 43);
             this.btnIngresarBienvenida.TabIndex = 0;
             this.btnIngresarBienvenida.Text = "INGRESAR";
-            this.btnIngresarBienvenida.UseVisualStyleBackColor = true;
+            this.btnIngresarBienvenida.UseVisualStyleBackColor = false;
             this.btnIngresarBienvenida.Click += new System.EventHandler(this.btnIngresarBienvenida_Click);
             // 
             // btnSalirBienvenida
             // 
+            this.btnSalirBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSalirBienvenida.FlatAppearance.BorderSize = 2;
             this.btnSalirBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirBienvenida.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirBienvenida.Location = new System.Drawing.Point(315, 255);
             this.btnSalirBienvenida.Name = "btnSalirBienvenida";
             this.btnSalirBienvenida.Size = new System.Drawing.Size(119, 43);
             this.btnSalirBienvenida.TabIndex = 1;
             this.btnSalirBienvenida.Text = "SALIR";
-            this.btnSalirBienvenida.UseVisualStyleBackColor = true;
+            this.btnSalirBienvenida.UseVisualStyleBackColor = false;
             this.btnSalirBienvenida.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblBienvenida.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.Location = new System.Drawing.Point(181, 217);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(189, 13);
+            this.lblBienvenida.Size = new System.Drawing.Size(226, 14);
             this.lblBienvenida.TabIndex = 3;
             this.lblBienvenida.Text = "BIENVENIDO A NUESTRO SISTEMA";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = global::ProyectoProgramacion.Properties.Resources.sangre_gif;
             this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources.portadadonasangre;
             this.pictureBox1.Location = new System.Drawing.Point(114, 47);
             this.pictureBox1.Name = "pictureBox1";
