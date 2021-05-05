@@ -57,5 +57,10 @@ namespace ProyectoProgramacion.VISTA
         {
 
         }
+
+        private void FrmAgendarCitas2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

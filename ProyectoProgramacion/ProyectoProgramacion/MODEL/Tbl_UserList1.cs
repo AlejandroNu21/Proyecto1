@@ -20,5 +20,6 @@ namespace ProyectoProgramacion.MODEL
         public Nullable<int> Telefono { get; set; }
         public Nullable<int> Edad { get; set; }
         public string GrupoSanguineo { get; set; }
+        public string FechaDonacion { get; set; }
     }
 }

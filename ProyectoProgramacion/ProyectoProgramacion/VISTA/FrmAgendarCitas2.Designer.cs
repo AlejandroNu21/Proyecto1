@@ -161,6 +161,7 @@ namespace ProyectoProgramacion.VISTA
             this.Name = "FrmAgendarCitas2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendar Citas 2";
+            this.Load += new System.EventHandler(this.FrmAgendarCitas2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgendarCita)).EndInit();
             this.ResumeLayout(false);
