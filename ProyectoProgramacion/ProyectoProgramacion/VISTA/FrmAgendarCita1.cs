@@ -26,8 +26,9 @@ namespace ProyectoProgramacion.VISTA
         {
             FrmAgendarCitas2 FechaCita = new FrmAgendarCitas2();
 
-            MessageBox.Show("\nBIENVENIDO\n");
+            MessageBox.Show("\nBIENVENIDO\n"+"<<"+ txtIngresarNombreCita.Text+">>");
             FechaCita.Show();
+            FechaCita.lblNomUs.Text = txtIngresarNombreCita.Text;
             this.Hide();
         }
 
@@ -39,6 +40,10 @@ namespace ProyectoProgramacion.VISTA
             FrmMenu frm = new FrmMenu();
             frm.Show();
         }
-    
+
+        private void txtIngresarNombreCita_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

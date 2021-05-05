@@ -40,6 +40,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnAgendarCita = new System.Windows.Forms.Button();
             this.btnSalirAgendarCita2 = new System.Windows.Forms.Button();
+            this.lblNomUs = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgendarCita)).BeginInit();
             this.SuspendLayout();
@@ -135,11 +136,22 @@ namespace ProyectoProgramacion.VISTA
             this.btnSalirAgendarCita2.UseVisualStyleBackColor = true;
             this.btnSalirAgendarCita2.Click += new System.EventHandler(this.btnSalirAgendarCita2_Click);
             // 
+            // lblNomUs
+            // 
+            this.lblNomUs.AutoSize = true;
+            this.lblNomUs.Location = new System.Drawing.Point(655, 24);
+            this.lblNomUs.Name = "lblNomUs";
+            this.lblNomUs.Size = new System.Drawing.Size(83, 13);
+            this.lblNomUs.TabIndex = 6;
+            this.lblNomUs.Text = "Nombre Usuario";
+            this.lblNomUs.Click += new System.EventHandler(this.lblNomUs_Click);
+            // 
             // FrmAgendarCitas2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 389);
+            this.Controls.Add(this.lblNomUs);
             this.Controls.Add(this.btnSalirAgendarCita2);
             this.Controls.Add(this.btnAgendarCita);
             this.Controls.Add(this.lblUsuario);
@@ -169,5 +181,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        public System.Windows.Forms.Label lblNomUs;
     }
 }

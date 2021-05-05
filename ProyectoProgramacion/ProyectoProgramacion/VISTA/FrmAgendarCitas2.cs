@@ -52,5 +52,10 @@ namespace ProyectoProgramacion.VISTA
         {
 
         }
+
+        private void lblNomUs_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

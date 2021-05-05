@@ -149,11 +149,10 @@ namespace ProyectoProgramacion.VISTA
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(161, 92);
+            this.txtId.Location = new System.Drawing.Point(137, 92);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(62, 20);
+            this.txtId.Size = new System.Drawing.Size(83, 20);
             this.txtId.TabIndex = 6;
-            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // FrmBuscarDonante
             // 

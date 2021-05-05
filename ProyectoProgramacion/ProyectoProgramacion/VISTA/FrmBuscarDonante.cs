@@ -33,6 +33,17 @@ namespace ProyectoProgramacion.VISTA
         }
         void Carga()
         {
+            dtgBuscarDonante.Rows.Clear();
+            using (DATOSPROYECTOEntities db = new DATOSPROYECTOEntities())
+            {
+                var Lista = db.Tbl_UserList1.ToList();
+
+                foreach (var iteracion in Lista)
+                {
+
+                    dtgBuscarDonante.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
+                }
+            }
 
         }
         void Clear()
@@ -50,28 +61,28 @@ namespace ProyectoProgramacion.VISTA
         {
             try
             {
-                Cls1 user = new Cls1();
-                user.deleteUser(Convert.ToInt32(Id));
-                Carga();
-                Clear();
-            }catch (Exception ex)
+                using (DATOSPROYECTOEntities db = new DATOSPROYECTOEntities())
+                {
+                    Tbl_UserList1 user = new Tbl_UserList1();
+                    int eliminar = (Convert.ToInt32(txtId.Text));
+                    user = db.Tbl_UserList1.Find(eliminar);
+                    db.Tbl_UserList1.Remove(user);
+                    db.SaveChanges();
+                    Carga();
+                    Clear();
+                }
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            //Cls1 user = new Cls1();
-            //user.deleteUser(Convert.ToInt32(Id));
-            //Carga();
-            //Clear();
         }
 
         private void dtgBuscarDonante_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             String Id = dtgBuscarDonante.CurrentRow.Cells[0].Value.ToString();
-            String NombreDonante = dtgBuscarDonante.CurrentRow.Cells[1].Value.ToString();
-            String Direccion = dtgBuscarDonante.CurrentRow.Cells[2].Value.ToString();
-            String Telefono = dtgBuscarDonante.CurrentRow.Cells[3].Value.ToString();
-            String Edad = dtgBuscarDonante.CurrentRow.Cells[4].Value.ToString();
-            String GrupoSanguineo = dtgBuscarDonante.CurrentRow.Cells[5].Value.ToString();
+            
 
 
             txtId.Text = Id;

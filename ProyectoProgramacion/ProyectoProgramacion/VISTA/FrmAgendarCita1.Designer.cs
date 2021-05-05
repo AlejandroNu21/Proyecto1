@@ -69,6 +69,7 @@ namespace ProyectoProgramacion.VISTA
             this.txtIngresarNombreCita.Name = "txtIngresarNombreCita";
             this.txtIngresarNombreCita.Size = new System.Drawing.Size(290, 20);
             this.txtIngresarNombreCita.TabIndex = 3;
+            this.txtIngresarNombreCita.TextChanged += new System.EventHandler(this.txtIngresarNombreCita_TextChanged);
             // 
             // pictureBox1
             // 
